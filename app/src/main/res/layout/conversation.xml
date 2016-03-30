@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:orientation="horizontal"
+        android:background="#6498fb"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/tv_convtitle"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_return"
+            android:src="@drawable/rc_bar_back"
+            android:gravity="left|center"
+            android:layout_gravity="left"
+            android:layout_width="48dp"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <fragment
+        android:id="@+id/conversation"
+        android:name="io.rong.imkit.fragment.ConversationFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

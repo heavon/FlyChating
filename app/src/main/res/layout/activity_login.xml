@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yadong.myapplication.LoginActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#6498fb"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="登录"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="#ffffff" >
+        <!-- 账号 -->
+        <!--android:tint="#777777"
+            android:tintMode="screen" -->
+        <ImageView
+            android:id="@+id/tv_zh"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+
+            android:src="@drawable/rc_default_portrait"/>
+        <EditText
+            android:id="@+id/et_zh"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:hint="用户名/邮箱"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:inputType="text"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+        <!-- 密码 text -->
+        <ImageView
+            android:id="@+id/tv_mima"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:src="@drawable/ic_password"/>
+        <EditText
+            android:id="@+id/et_mima"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+    <!--android:buttonTint="#6498fb" -->
+    <LinearLayout
+        android:id="@+id/ll_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="#ffffff" >
+        <CheckBox
+            android:id="@+id/cb_mima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#6498fb"
+            android:text="记住密码" />
+
+        <CheckBox
+            android:id="@+id/cb_auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#6498fb"
+            android:text="自动登录" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+        <!-- 登录button -->
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6498fb"
+            android:text="登录" />
+
+    </LinearLayout>
+
+</LinearLayout>

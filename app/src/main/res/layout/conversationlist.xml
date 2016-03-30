@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yadong="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#6498fb"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="会话"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/tabbg"
+        android:orientation="horizontal" >
+
+        <com.example.yadong.Views.ChangeColorIconWithTextView
+            android:id="@+id/id_indicator_one"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            yadong:icon1="@drawable/ic_menu_start_conversation"
+            yadong:color1="#6498fb"
+            yadong:text="会话"
+            yadong:text_size="12sp" />
+
+        <com.example.yadong.Views.ChangeColorIconWithTextView
+            android:id="@+id/id_indicator_two"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            yadong:icon1="@drawable/ic_menu_friendslist"
+            yadong:color1="#6498fb"
+            yadong:text="好友"
+            yadong:text_size="12sp" />
+
+        <com.example.yadong.Views.ChangeColorIconWithTextView
+            android:id="@+id/id_indicator_three"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            yadong:icon1="@drawable/ic_menu_emoticons"
+            yadong:color1="#6498fb"
+            yadong:text="设置"
+            yadong:text_size="12sp" />
+
+        <com.example.yadong.Views.ChangeColorIconWithTextView
+            android:id="@+id/id_indicator_four"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            yadong:icon1="@drawable/ic_menu_allfriends"
+            yadong:color1="#6498fb"
+            yadong:text="个人中心"
+            yadong:text_size="12sp" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
